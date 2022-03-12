@@ -5,7 +5,7 @@
     {
       nixpkgs.url = github:nixos/nixpkgs/nixpkgs-unstable;
       flake-utils-plus.url = github:gytis-ivaskevicius/flake-utils-plus/master;
-      qmk-nix-utils.url = github:aciceri/qmk-nix-utils/master; #path:/home/ccr/projects/qmk-nix-utils;
+      qmk-nix-utils.url = github:aciceri/qmk-nix-utils/master;
     };
 
   outputs =
@@ -29,11 +29,11 @@
 
       utils = utils-factory
         {
-          firmware-path = ./src;
+          src = ./src;
           keyboard-name = "macro";
           keymap-name = "vial";
           qmk-firmware-source = qmk-vial-source;
-          flash-command = ''
+          flash-script = ''
             echo -n "Press the RESET button..."
             while [ ! -e /dev/ttyACM0 ]
             do

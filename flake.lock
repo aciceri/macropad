@@ -106,11 +106,11 @@
         "nixpkgsUnstable": "nixpkgsUnstable"
       },
       "locked": {
-        "lastModified": 1647096405,
-        "narHash": "sha256-Y18zMV0pkV05LFUWkG9AGL7J+joy90/6q6mg+AA85Bk=",
+        "lastModified": 1647103140,
+        "narHash": "sha256-UvDrUwZCQumzI6b7p5j4hcAPn3ctTAX3Rhd9Nhw5Nmw=",
         "owner": "aciceri",
         "repo": "qmk-nix-utils",
-        "rev": "ad76fb42709905d485d68b80ec4978d74d162d99",
+        "rev": "37b8eb29560db16d7a9b449c91775497ab0ef1cf",
         "type": "github"
       },
       "original": {
