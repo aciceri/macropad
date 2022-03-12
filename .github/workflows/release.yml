@@ -1,0 +1,28 @@
+name: "Build and release"
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Install Nix
+        if: success()
+        uses: cachix/install-nix-action@v16
+
+      - name: Build
+        if: success()
+        run: nix build
+
+      - uses: "marvinpinto/action-automatic-releases@v1.2.1"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          files: |
+            result/*.hex
