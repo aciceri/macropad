@@ -1,0 +1,3 @@
+.qmk_firmware/
+./result
+.direnv/

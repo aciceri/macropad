@@ -1,0 +1,4 @@
+#pragma once
+
+#define VIAL_KEYBOARD_UID {0x3C, 0x7B, 0x57, 0xFC, 0xF8, 0xB8, 0x8F, 0xD6}
+#define VIAL_ENCODER_DEFAULT { KC_A, KC_B, KC_C, KC_D, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS }
