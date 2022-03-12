@@ -1,0 +1,12 @@
+[[file:case/photo.jpg]]
+This repository contains the QMK powered firmware for my macropad.
+
+
+* TODO Software
+To write...
+
+* Case
+
+I used [[https://www.thingiverse.com/mmohn/designs][mmohn]]'s
+[[https://www.thingiverse.com/thing:3810124][mechanical keypad]] with
+[[https://www.thingiverse.com/thing:4716758][this]] bottom part (without JACK connectors).
